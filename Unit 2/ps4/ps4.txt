@@ -1,0 +1,21 @@
+Problem 2 Pseudocode
+for shift key 1 to 26
+    decode text using shift key
+    for every word in decoded text
+        if word is a valid word
+            increase counter by 1
+
+shift key with highest counter is the result
+
+
+
+Problem 4 Pseudocode
+if start value > length of string
+    return
+for shift value 1 to 26
+    decode text starting from start value using shift key
+    get the first word
+    if first word is valid
+        set index to start
+        set shift value to shift key
+        return tuple + recurse with decoded text and start value set to index of character after space
